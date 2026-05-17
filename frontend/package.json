@@ -1,5 +1,6 @@
 {
   "name": "edupay-frontend",
+  "description": "Transparent school fee payments on Stellar — landing page and future parent/school portals",
   "private": true,
   "version": "0.1.0",
   "type": "module",

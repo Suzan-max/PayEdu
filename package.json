@@ -1,5 +1,6 @@
 {
   "name": "edupay",
+  "description": "Transparent school fee payments on Stellar — because no child should be sent home over a payment that was already made.",
   "private": true,
   "version": "0.1.0",
   "workspaces": [

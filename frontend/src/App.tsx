@@ -20,12 +20,12 @@ function App() {
 
         <div className="hero-grid">
           <section className="hero-copy">
-            <span className="eyebrow">Transparent school fee payments</span>
-            <h1>School fee payments, without the confusion.</h1>
+            <span className="eyebrow">Transparent school fee payments on Stellar</span>
+            <h1>Because no child should be sent home over a payment that was already made.</h1>
             <p className="hero-text">
-              EduPay gives schools and parents one reliable record for every
-              student fee. Payments can happen in installments, but balances,
-              history, and clearance status stay visible in one place.
+              EduPay turns every school fee payment into an on-chain Stellar transaction — 
+              permanent, timestamped, and visible to both parent and school in real time. 
+              No manual reconciliation. No disputes.
             </p>
 
             <div className="hero-actions">
@@ -123,32 +123,30 @@ function App() {
         <section className="content-section" id="problem">
           <SectionTitle
             eyebrow="Problem"
-            title="School fee tracking is still too manual."
-            intro="Many schools rely on notebooks, chat messages, and memory. EduPay gives both sides a single running balance they can trust."
+            title="There is no shared source of truth."
+            intro="Parents pay in installments through relatives, mobile transfers, or cash. Schools track this in notebooks. Records get lost. Children get sent home over payments already made."
           />
 
           <div className="problem-layout">
             <article className="story-card">
-              <h3>Parents do not always pay all at once</h3>
+              <h3>Parents rarely pay all at once</h3>
               <p>
-                School fees are often paid in small installments through bank
-                transfers, relatives, or cash conversion. The system should
-                reflect that reality.
+                A parent scrapes together ₦15,000 through an aunt, then ₦10,000 via mobile transfer. 
+                The system that tracks these installments is a bursar's notebook, a WhatsApp thread, or nothing at all.
               </p>
             </article>
             <article className="story-card">
-              <h3>Schools need a record they can rely on</h3>
+              <h3>Existing solutions don't work</h3>
               <p>
-                Administrators need one ledger that shows payment history,
-                outstanding balance, and whether a student is cleared for the
-                term.
+                Banks have records on the parent's side only. School software requires manual entry. 
+                WhatsApp confirmations get deleted. Paper receipts get lost.
               </p>
             </article>
             <article className="story-card emphasis-card">
               <h3>The cost of confusion is real</h3>
               <p>
-                When records are inconsistent, payment disputes become a family
-                problem and a school operations problem at the same time.
+                When records are inconsistent, disputes become a family problem and a school operations problem. 
+                Children sit at home for days while adults argue over what was paid.
               </p>
             </article>
           </div>
@@ -157,8 +155,8 @@ function App() {
         <section className="content-section" id="solution">
           <SectionTitle
             eyebrow="Solution"
-            title="A product that feels familiar, backed by a transparent ledger."
-            intro="EduPay is built for a simple everyday experience: check a balance, confirm a payment, and know whether a student is cleared."
+            title="A payment record that both sides see, neither side can alter."
+            intro="EduPay uses Stellar to create a transparent ledger replacing the bursar's notebook. Every payment is permanent, timestamped, and visible in real time."
           />
 
           <div className="feature-grid">
@@ -174,8 +172,8 @@ function App() {
         <section className="content-section flow-section" id="architecture">
           <SectionTitle
             eyebrow="How it works"
-            title="A simple payment loop powered by Stellar."
-            intro="EduPay is designed around a straightforward user flow so schools can adopt it without learning blockchain mechanics."
+            title="Horizon API streams transactions. Balances update automatically."
+            intro="Each student's fee wallet is a Stellar account. EduPay listens to the event stream and updates balances — no staff input required."
           />
 
           <div className="flow-grid">
@@ -190,9 +188,9 @@ function App() {
 
         <section className="content-section alt-section">
           <SectionTitle
-            eyebrow="Who it helps"
-            title="Useful for every side of the fee payment process."
-            intro="EduPay works best when the system is simple enough for parents, practical enough for schools, and trustworthy enough for everyday use."
+            eyebrow="Why this matters"
+            title="The blockchain is the backend. The value is the transparency."
+            intro="EduPay doesn't ask anyone to understand blockchain. Parents just see their balance. Schools just see clearance status. The transparency is what matters."
           />
 
           <div className="pillar-grid">
